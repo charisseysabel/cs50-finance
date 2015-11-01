@@ -32,3 +32,46 @@
     /* surround with whitespace */
     margin: 20px;
 }
+
+/*
+*
+*	TABLE
+*
+*/
+
+table
+{
+	width: 960px;
+	text-align: left;
+}
+
+#cash td
+{
+	font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
