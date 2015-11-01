@@ -6,7 +6,9 @@
 
         <link href="/css/bootstrap.min.css" rel="stylesheet"/>
         <link href="/css/bootstrap-theme.min.css" rel="stylesheet"/>
+        <link href="/css/portfolio-style.css" rel="stylesheet"/>
         <link href="/css/styles.css" rel="stylesheet"/>
+
 
         <?php if (isset($title)): ?>
             <title>C$50 Finance: <?= htmlspecialchars($title) ?></title>
