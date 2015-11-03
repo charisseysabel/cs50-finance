@@ -13,22 +13,22 @@
 		{
 			$positions[] = [
 				"name" => $stock["name"],
-				"price" => $stock["price"],
+				"price" => number_format($stock["price"], 2 ),
 				"shares" => $row["shares"],
 				"symbol" => $row["symbol"],
-				"total" => $stock["price"] * $row["shares"]
+				"total" => number_format(($stock["price"] * $row["shares"]), 2 )
 			];
 		}
 	}
 	
 	//get user's cash total
-	$getCash = query("SELECT cash FROM users WHERE id = ?", $_SESSION["id"] );
-	$totalCash = $getCash[0]["cash"];
+	$userRow = query("SELECT cash FROM users WHERE id = ?", $_SESSION["id"]);
+	$totalCash = $userRow[0]["cash"];
 	
-//	$totalCash = $getCash[0]["cash"] - $positions[1]["price"];
 	
-	render("portfolio.php", ["positions" => $positions, "cash" => number_format($totalCash, 2),
-			"title" => "Portfolio"] );
+
+	
+	render("portfolio.php", ["positions" => $positions, "title" => "Portfolio", "totalCash" => number_format($totalCash , 2) ] );
 	
 
 ?>

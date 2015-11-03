@@ -13,11 +13,11 @@
 <table class="table table-striped">
 	<thead>
 		<tr>
-			<th> <strong>Name</strong> </th>
-			<th> <strong>Symbol</strong> </th>
-			<th> <strong>Shares</strong> </th>
-			<th> <strong>Price</strong> </th>			
-			<th> <strong>TOTAL</strong> </th>
+			<th>Name</th>
+			<th>Symbol</th>
+			<th>Shares</th>
+			<th>Price</th>			
+			<th>TOTAL</th>
 		</tr>
 	</thead>
 	
@@ -32,10 +32,13 @@
 
 		</tr>
 		<?php endforeach ?>
+		
+
 		<tr id="cash">
 			<td colspan="4">CASH</td>
-			<td>$ <?= htmlspecialchars($cash)?> </td>
+			<td>$ <?= $totalCash ?></td>
 		</tr>
+
 		
 	</tbody>
 </table>
