@@ -12,6 +12,7 @@
     /* center contents */
     margin-left: auto;
     margin-right: auto;
+    margin-top: 150px;
     text-align: center;
 }
 
@@ -33,9 +34,65 @@
     margin: 20px;
 }
 
+h1 a
+{
+	font-family: "Ubuntu", sans-serif;
+	color: #0f647c;
+}
+
+h1 a:hover
+{
+	text-decoration: none;
+}
+
+form
+{
+	margin: 50px;
+}
+
+.form-group
+{
+	margin-bottom: 20px;
+}
+
+
+/**
+*
+*	GLOBAL MENU
+*
+*
+**/
+ul
+{
+	list-style-type: none;
+	font-size: 14px;
+	margin-bottom: 20px;
+	margin-top: 10px;
+	text-transform: uppercase;
+}
+
+li
+{
+	display: inline;
+}
+
+li a
+{
+	color: #ababab;
+	padding: 15px;
+}
+
+li a:hover
+{
+	text-decoration: none;
+	color: #0f647c;
+	border-bottom: 1px solid #0f647c;
+}
+
+
 /*
 *
-*	TABLE
+*	PORTFOLIO - TABLE
 *
 */
 
@@ -50,14 +107,46 @@ table
 	font-weight: bold;
 }
 
+th
+{
+	color: #0f647c;
+}
 
 
+/*
+*
+*	BUTTON
+*
+*/
+.btn
+{
+	margin: 10px;
+	background: none;
+	border: 1px solid #ababab;
+	color: #ababab;
+	padding: 10px;
+	width: 120px;
+	border-radius: 10px;
+}
 
+.btn:hover
+{
+	background-color: #0f647c;
+	color: white;
+	border: none;
+}
 
-
-
-
-
+/*
+*
+*	INPUT FIELD
+*
+*/
+input
+{
+	border-radius: 5px;
+	border: 1px solid #ababab;
+	padding: 5px;
+}
 
 
 

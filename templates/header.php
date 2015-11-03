@@ -8,6 +8,7 @@
         <link href="/css/bootstrap-theme.min.css" rel="stylesheet"/>
         <link href="/css/portfolio-style.css" rel="stylesheet"/>
         <link href="/css/styles.css" rel="stylesheet"/>
+        <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
 
 
         <?php if (isset($title)): ?>
@@ -27,7 +28,38 @@
         <div class="container">
 
             <div id="top">
-                <a href="/"><img alt="C$50 Finance" src="/img/logo.gif"/></a>
+                <h1><a href="/">C$50 Finance</a></h1>
+                <ul>
+                	<li> <a href="/">Portfolio</a> </li>
+                	<li> <a href="quote.php">Quote</a> </li>
+                	<li> <a href="buy.php">Buy</a> </li>
+                	<li> <a href="sell.php">Sell</a> </li>
+                	<li> <a href="/">History</a> </li>
+                	<li> <a href="logout.php">Log Out</a> </li>
+                </ul>
             </div>
 
             <div id="middle">
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
