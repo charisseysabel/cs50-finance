@@ -30,27 +30,3 @@
     }
 
 ?>
-
-
-<!--
-    CONSTANTS.PHP:
-    FUNCTIONS.PHP:
-
-    
-    
-
-    QUESTIONS: 
-    INI_SET: sets the value of a configuration option.
-    ERROR_REPORTING: sets which php errors are reported.
-    REQUIRE: identical to #include
-    SESSION_START: creates a session or resumes the current based on a session identifier 
-        passed via a GET or POST request, or cookie.
-        To use a named session, call session_name() before session_start()
-    IN_ARRAY: checks if a value exists in an array
-    $_SERVER: an array containing info such as headers, paths, and script locations.
-        PHP_SELF: filename of the currently executing script.
-    EMPTY: determines if a variable is empty.
-
-
-
--->
