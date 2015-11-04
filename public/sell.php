@@ -22,7 +22,8 @@
 			}
 			
 			// get selling price to be added to user's cash
-			$stkPrice = lookup($row["symbol"]);
+			$stkPrice = lookup($_POST["symbol"]);
+			
 			// get the total price
 			$totalSold = $stkPrice["price"] * $row["shares"]; 
 			
@@ -30,6 +31,14 @@
 			if($cashUpdate === false)
 			{
 				apologize("Unable to process transaction.");
+			}
+			
+			// update history
+			$history = query("INSERT INTO history (id, symbol, shares, transaction, time, price) VALUES(?, ?, ?, 'SELL', CURRENT_TIMESTAMP, ?) ",
+								$_SESSION["id"], strtoupper($_POST["symbol"]), $row["shares"], $totalSold );
+			if($history === false)
+			{
+				apologize("Error processing request.");
 			}
 			
 			redirect("/");
