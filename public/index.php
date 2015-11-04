@@ -2,7 +2,6 @@
 
     // configuration
     require("../includes/config.php");
-//    require("./css/portfolio-style.css"); 
     
 	$positions = [];
 	$rows = query("SELECT shares, symbol FROM portfolio WHERE id = ?", $_SESSION["id"] );

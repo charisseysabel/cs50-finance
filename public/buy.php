@@ -60,6 +60,15 @@
 							{
 								apologize("Unable to process transaction.");
 							}
+							
+							// update history
+							$history = query("INSERT INTO history (id, symbol, shares, transaction, time, price) VALUES(?, ?, ?, 'BUY', CURRENT_TIMESTAMP, ?) ",
+								$_SESSION["id"], strtoupper($_POST["symbol"]), $_POST["shares"], $amtOwed );
+							
+							if($history === false)
+							{
+								apologize("Error processing request.");
+							}	
 						}					
 					redirect("/");		
 			}
@@ -67,3 +76,14 @@
 		render("buy_form.php", ["title" => "Buy"]);
 	}
 ?>
+
+
+
+
+
+
+
+
+
+
+
